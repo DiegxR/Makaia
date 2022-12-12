@@ -1,0 +1,164 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);  
+    --Cyan: hsl(186, 34%, 60%);
+    --hover: #ff9b87;
+    --active: #b4dfe5;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+    font-family: 'DM Sans', sans-serif;
+}
+/* My balance ancabezado */
+header{
+    background-color:  var(--Soft-red);
+    width: 350px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    color: white;
+    
+}
+header img{
+    width: 45px;
+    margin-right: 25px;
+}
+header div{
+    margin: 15px auto auto 22px;
+}
+header div p{
+    margin-bottom: 5px;
+    font-size: 11px;
+    color: var(--Cream);
+}
+header div h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+/* Main */
+main{
+    background-color: white;
+    width: 350px;
+    height: 320px;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 20px;
+    
+}
+main h1{
+    text-align: start;
+    
+    color: var(--Dark-brown);
+}
+.weekBar{
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+}
+.weekBar figure{
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: var(--Medium-brown);
+    justify-content: end;
+    align-items: center;
+    width: 35px;
+    
+}
+.weekBar figure p:first-child{
+    background-color: var(--Dark-brown);
+    color: white ;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 9px;
+    margin-bottom: 4px;
+    display: none;
+}
+figure:hover p:first-child{
+  display: block;
+}
+
+.weekBar figure div{
+    margin: 0px 0px 6px 0px;
+    cursor: pointer;
+    width: 32px;
+    border-radius: 4px;
+    background-color: var(--Soft-red); 
+}
+figure:hover div{
+    background-color: var(--hover);
+}
+
+/* Tamaño de las barras */
+.weekBar figure:nth-child(1) div{
+    height: 30px;
+}
+.weekBar figure:nth-child(2) div{
+    height: 60px;
+}
+.weekBar figure:nth-child(3) div{
+    height: 95px;
+}
+.weekBar figure:nth-child(4) div{
+    height: 55px;
+}
+.weekBar figure:nth-child(5) div{
+    height: 40px;
+}
+.weekBar figure:nth-child(6) div{
+    height: 80px;
+}
+.weekBar figure:nth-child(7) div{
+    height: 50px;
+}
+.weekBar figure div:active  { 
+    background-color: var(--Cyan);
+    transition:0s;
+}
+/* Linea */
+.Line {
+    margin: 15px auto 20px auto;
+    border-bottom: 2px solid var(--Cream);
+    width: 300px;
+    height: 10px;
+}
+/* Barra de total */
+.totalBar{
+    display: flex; 
+    justify-content: space-between;
+}
+.totalBar div:last-child{
+    margin-top: 10px;
+}
+.totalBar div p{
+    font-size: 10px;
+    color: var(--Medium-brown);
+}
+.totalBar div:first-child h2{
+    font-size: 25px;
+    color: var(--Dark-brown);
+}
+h5{
+    color: var(--Dark-brown);
+}
+.totalBar div:last-child{
+    text-align: end;
+}
